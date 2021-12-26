@@ -35,7 +35,7 @@ If errors like ```Traget URI doesn't...``` or ```Undefined name 'AppLocalization
 
 ## Usage
 
-- [ObservingStatefulWidget](../extensions_package/readme/observing_stateful_widget.md)
+- [ObservingStatefulWidget](readme/observing_stateful_widget.md)
 
 ## Final Note
 
