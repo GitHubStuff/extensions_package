@@ -8,18 +8,34 @@ This is a template for the README.md. Replace the *README.md* with this, and fil
 dependencies:
   extensions_package:
     git:
-      url: {url of github repo}
+      url: https://github.com/GitHubStuff/extensions_package.git
+```
+
+***- OR -***
+
+```text
+dependencies:
+  extensions_package:
+    git:
+      url: https://github.com/RAE-Health/extensions_package.git
 ```
 
 ## Import
 
 ```dart
-import 'package:empty_packge/extensions_package.dart';
+import 'package:extensions_package/extensions_package.dart';
 ```
+
+### Language errors because Dart Analyzer crashed on VSCode
+
+If errors like ```Traget URI doesn't...``` or ```Undefined name 'AppLocalizations'``` Reload the Dart Analyzer
+
+1) Open the Command Palette (Ctrl+Shift+P)
+2) Enter and select ```Developer: Reload Window```
 
 ## Usage
 
-Provide details/examples on usage.
+- [ObservingStatefulWidget](../extensions_package/readme/observing_stateful_widget.md)
 
 ## Final Note
 
