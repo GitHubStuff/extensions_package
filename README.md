@@ -35,10 +35,11 @@ If errors like ```Traget URI doesn't...``` or ```Undefined name 'AppLocalization
 
 ## Usage
 
+- [abstract class ObservingStatefulWidget](readme/observing_stateful_widget.md) - helper methods like ```afterFirstLayout``` and callbacks for Widget state changes.
+- [class SimpleBlocObserver extends BlocObserver](readme/simple_bloc_observer.md) - logs to console BLoC transitions
 - [extension BuildContextExtensions on BuildContext](readme/build_context_extensions.md) - getters and methods
 - [extension DateTimeExtension on DateTime](readme/date_time_extensions.md) - enums, methods, and getters for [DateTime](https://api.flutter.dev/flutter/dart-core/DateTime-class.html)
-- [abstart class ObservingStatefulWidget](readme/observing_stateful_widget.md) - helper methods like ```afterFirstLayout``` and callbacks for Widget state changes.
-- [class SimpleBlocObserver extends BlocObserver](readme/simple_bloc_observer.md) - logs to console BLoC transitions
+- [extension DurationExtension on Duration](readme/duration_extensions.md) - add/substract a ```Duration``` by a ```Duration```
 
 ## Final Note
 
