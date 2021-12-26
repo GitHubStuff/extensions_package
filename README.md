@@ -40,6 +40,7 @@ If errors like ```Traget URI doesn't...``` or ```Undefined name 'AppLocalization
 - [extension BuildContextExtensions on BuildContext](readme/build_context_extensions.md) - getters and methods
 - [extension DateTimeExtension on DateTime](readme/date_time_extensions.md) - enums, methods, and getters for [DateTime](https://api.flutter.dev/flutter/dart-core/DateTime-class.html)
 - [extension DurationExtension on Duration](readme/duration_extensions.md) - add/substract a ```Duration``` by a ```Duration```
+- [extension ImageExtension on Image](readme/image_extension.md) - rotations of an image
 
 ## Final Note
 

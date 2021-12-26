@@ -17,6 +17,13 @@ class _ScaffoldWidget extends ObservingStatefulWidget<ScaffoldWidget> {
   String instruction = 'Tap + to change the text';
   String instruction2 = 'Tap again';
   bool isFirst = true;
+  late Image sample;
+
+  @override
+  void initState() {
+    super.initState();
+    sample = Image.asset('assets/sample.png');
+  }
 
   @override
   Widget build(BuildContext context) => Scaffold(
@@ -46,6 +53,17 @@ class _ScaffoldWidget extends ObservingStatefulWidget<ScaffoldWidget> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
+          Wrap(
+            spacing: 8.0,
+            children: [
+              Container(height: 50, width: 50, child: sample),
+              Container(height: 50, width: 50, child: sample.rotate(percentage: 0.12)),
+              Container(height: 50, width: 50, child: sample.rightRotation),
+              Container(height: 50, width: 50, child: sample.rotate(percentage: 0.37)),
+              Container(height: 50, width: 50, child: sample.upsideDownRotation),
+              Container(height: 50, width: 50, child: sample.leftRotation),
+            ],
+          ),
           Text(
             message,
           ),
