@@ -1,6 +1,6 @@
 name: extensions_package # search/replace all occurances of 'extensions_package' to the new package name
 description: Template for Flutter Package project.
-version: 0.0.7+3
+version: 0.0.1+1
 homepage: http://www.raehealth.com
 publish_to: 'none'
 

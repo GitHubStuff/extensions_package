@@ -35,8 +35,9 @@ If errors like ```Traget URI doesn't...``` or ```Undefined name 'AppLocalization
 
 ## Usage
 
-- [ObservingStatefulWidget](readme/observing_stateful_widget.md)
-- [SimpleBlocObserver](readme/simple_bloc_observer.md)
+- [extension BuildContextExtensions on BuildContext](readme/build_context_extensions.md) - getters and methods
+- [abstart class ObservingStatefulWidget](readme/observing_stateful_widget.md) - helper methods like ```afterFirstLayout``` and callbacks for Widget state changes.
+- [class SimpleBlocObserver extends BlocObserver](readme/simple_bloc_observer.md) - logs to console BLoC transitions
 
 ## Final Note
 
