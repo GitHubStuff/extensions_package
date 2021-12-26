@@ -19,7 +19,6 @@ class ThemeAndMaterialWidget extends StatelessWidget {
     return BlocBuilder<LocaleCubit, LocaleState>(
         bloc: localeCubit,
         builder: (_, state) {
-          debugPrint(state.toString());
           if (state is LocaleInitial) {
             localeCubit.lookupInitialLocale();
           }

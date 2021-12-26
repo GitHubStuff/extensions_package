@@ -6,4 +6,6 @@ export 'src/date_time_extensions.dart';
 export 'src/duration_extensions.dart';
 export 'src/image_extensions.dart';
 export 'src/simple_bloc_observer.dart';
+export 'src/text_extensions.dart';
+export 'src/widget_extensions.dart';
 export 'src/widgets/widget_size.dart';

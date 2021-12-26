@@ -33,7 +33,7 @@ If errors like ```Traget URI doesn't...``` or ```Undefined name 'AppLocalization
 1) Open the Command Palette (Ctrl+Shift+P)
 2) Enter and select ```Developer: Reload Window```
 
-## Usage
+## Abtract classes, classes, and extensions
 
 - [abstract class ObservingStatefulWidget](readme/observing_stateful_widget.md) - helper methods like ```afterFirstLayout``` and callbacks for Widget state changes.
 - [class SimpleBlocObserver extends BlocObserver](readme/simple_bloc_observer.md) - logs to console BLoC transitions
@@ -41,7 +41,8 @@ If errors like ```Traget URI doesn't...``` or ```Undefined name 'AppLocalization
 - [extension DateTimeExtension on DateTime](readme/date_time_extensions.md) - enums, methods, and getters for [DateTime](https://api.flutter.dev/flutter/dart-core/DateTime-class.html)
 - [extension DurationExtension on Duration](readme/duration_extensions.md) - add/substract a ```Duration``` by a ```Duration```
 - [extension ImageExtension on Image](readme/image_extension.md) - rotations of an image
-- [extension WidgetExtensions on Widget](readme/widget_extensions.md) - wrappers for hiding/showing a widget
+- [extension TextExtensions on Text](readme/text_extensions.md) - methods on Text Widgets for setting fontSize and textColor
+- [extension WidgetExtensions on Widget](readme/widget_extensions.md) - methods for layouting Widgets and setting properties
 
 ## Final Note
 

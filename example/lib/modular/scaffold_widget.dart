@@ -53,10 +53,18 @@ class _ScaffoldWidget extends ObservingStatefulWidget<ScaffoldWidget> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
+          Text('Hello You!')
+              .textColor(Colors.white)
+              .fontSize(31.0)
+              .paddingAll(12.0)
+              .background(Colors.lightBlue)
+              .wrap(bottom: 3, top: 3, left: 3, right: 3, color: Colors.white)
+              .borderAll(Colors.green)
+              .wrap(bottom: 8, top: 3, left: 3, right: 3),
           Wrap(
             spacing: 8.0,
             children: [
-              Container(height: 50, width: 50, child: sample),
+              Container(height: 50, width: 50, child: sample).wrapAll(4.0).borderAll(Colors.red),
               Container(height: 50, width: 50, child: sample.rotate(percentage: 0.12)),
               Container(height: 50, width: 50, child: sample.rightRotation),
               Container(height: 50, width: 50, child: sample.rotate(percentage: 0.37)),
