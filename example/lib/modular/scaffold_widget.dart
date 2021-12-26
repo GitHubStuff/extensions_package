@@ -1,6 +1,5 @@
 import 'package:extensions_package/extensions_package.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_extras/flutter_extras.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:theme_manager/theme_manager.dart';
 import 'package:xample/cubit/locale_cubit.dart';
@@ -31,6 +30,8 @@ class _ScaffoldWidget extends ObservingStatefulWidget<ScaffoldWidget> with Dicti
         body: _body(context),
         floatingActionButton: FloatingActionButton(
           onPressed: () {
+            debugPrint('Keyboard open ${context.isKeyBoardOpen}');
+            if (context.isKeyBoardOpen) context.hideKeyboard();
             setState(() {
               isFirst = !isFirst;
             });
@@ -50,8 +51,14 @@ class _ScaffoldWidget extends ObservingStatefulWidget<ScaffoldWidget> with Dicti
           Text(
             message,
           ),
+          TextField(
+            decoration: InputDecoration(
+              border: OutlineInputBorder(),
+              hintText: 'Enter a search term',
+            ),
+          ),
           WidgetSize(
-            onChange: (Size size) {
+            onSizeChange: (Size? size) {
               setState(() {
                 final height = context.height;
                 final width = context.width;

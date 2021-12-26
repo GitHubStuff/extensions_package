@@ -1,6 +1,6 @@
+import 'package:extensions_package/extensions_package.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_extras/flutter_extras.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:theme_manager/theme_manager.dart';
 
@@ -20,7 +20,9 @@ void main() async {
       module: AppModule(),
       child: ThemeAndMaterialWidget(),
     )),
-    blocObserver: SimpleBlocObserver(),
+
+    // Add observer for BLoC changes in development
     // NOTE: For release blocObserver: null,
+    blocObserver: SimpleBlocObserver(),
   );
 }
