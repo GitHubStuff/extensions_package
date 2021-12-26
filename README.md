@@ -36,6 +36,7 @@ If errors like ```Traget URI doesn't...``` or ```Undefined name 'AppLocalization
 ## Usage
 
 - [ObservingStatefulWidget](readme/observing_stateful_widget.md)
+- [SimpleBlocObserver](readme/simple_bloc_observer.md)
 
 ## Final Note
 
