@@ -42,6 +42,7 @@ If errors like ```Traget URI doesn't...``` or ```Undefined name 'AppLocalization
 - [extension DurationExtension on Duration](readme/duration_extensions.md) - add/substract a ```Duration``` by a ```Duration```
 - [extension ImageExtension on Image](readme/image_extension.md) - rotations of an image
 - [extension TextExtensions on Text](readme/text_extensions.md) - methods on Text Widgets for setting fontSize and textColor
+- [extension ThemeModeExtension on ThemeMode](readme/theme_mode_extensions.md) - returns brightness of a themeMode
 - [extension WidgetExtensions on Widget](readme/widget_extensions.md) - methods for layouting Widgets and setting properties
 
 ## Final Note

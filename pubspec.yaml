@@ -1,6 +1,6 @@
 name: extensions_package
 description: Collection of extensions used in app and package development
-version: 0.0.1+9
+version: 0.0.1+10
 homepage: http://www.raehealth.com
 publish_to: 'none'
 
@@ -19,7 +19,7 @@ dependencies:
   intl: ^0.17.0
 
 dev_dependencies:
-  test: ^1.20.0
+  test: ^1.20.1
 
 flutter:
   uses-material-design: true
