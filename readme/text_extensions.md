@@ -9,3 +9,7 @@
   // Set the text's fontSize
   Text fontSize(double fontSize)
 ```
+
+## Final Note
+
+Be kind to each other
