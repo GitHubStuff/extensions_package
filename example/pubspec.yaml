@@ -18,12 +18,11 @@ dependencies:
     sdk: flutter
   flutter_modular: ^4.3.0
   intl: ^0.17.0
-  theme_management:
+  theme_manager:
     git:
-      url: https://github.com/RAE-Health/theme_management.git
+      url: https://github.com/GitHubStuff/theme_manager.git
 
-
-dependency_overrides: null
+dependency_overrides:
 
 dev_dependencies:
   test: ^1.20.1

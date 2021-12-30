@@ -12,7 +12,7 @@ class ThemeAndMaterialWidget extends StatelessWidget {
     return _localeWidget();
   }
 
-/// Widget wrapper to enclose the BlocBuilder that manages state for changing lanaguage/locale
+  /// Widget wrapper to enclose the BlocBuilder that manages state for changing lanaguage/locale
   Widget _localeWidget() {
     LocaleCubit localeCubit = Modular.get<LocaleCubit>();
     Locale? currentLocale;
@@ -29,7 +29,7 @@ class ThemeAndMaterialWidget extends StatelessWidget {
         });
   }
 
-/// Widget wrapper to enclose switching dark/light mode themes of the MaterialApp
+  /// Widget wrapper to enclose switching dark/light mode themes of the MaterialApp
   Widget _materialAppBloc(Locale? locale) {
     return BlocBuilder<ThemeCubit, ThemeCubitState>(
         bloc: ThemeManager.themeCubit,
