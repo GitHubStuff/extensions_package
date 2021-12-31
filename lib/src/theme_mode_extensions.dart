@@ -20,7 +20,7 @@ extension ThemeModeExtensions on ThemeMode {
     }
   }
 
-  BrightnessType type(BuildContext context) {
+  BrightnessType brightnessType(BuildContext context) {
     switch (this) {
       case ThemeMode.dark:
         return BrightnessType.appDark;
