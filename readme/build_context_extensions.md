@@ -15,6 +15,7 @@ extension BuildContextExtensions on BuildContext {
   TextTheme get primaryTextTheme => appTheme.primaryTextTheme;
   TextTheme get textTheme => appTheme.textTheme;
   ThemeData get appTheme => Theme.of(this);
+  List<Locale>? get locales => findAncestorWidgetOfExactType<MaterialApp>()?.supportedLocales.toList();
 
   void hideKeyboard() => !FocusScope.of(this).hasPrimaryFocus ? FocusScope.of(this).unfocus() : Void;
 }

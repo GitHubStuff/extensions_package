@@ -12,4 +12,8 @@ extension ThemeModeExtensions on ThemeMode {
         return context.platformBrightness;
     }
   }
+
+  static ThemeMode _mode = ThemeMode.system;
+  static ThemeMode get themeMode => _mode;
+  static set themeMode(ThemeMode newMode) => newMode;
 }

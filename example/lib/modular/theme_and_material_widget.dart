@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:theme_manager/theme_manager.dart';
@@ -43,7 +42,6 @@ class ThemeAndMaterialWidget extends StatelessWidget {
             themeMode: ThemeManager.themeMode,
             initialRoute: '/',
             localizationsDelegates: [
-              AppLocalizations.delegate, //Used to translate strings in /l10n/app_en.arb or /l10n/app_es.arb files
               GlobalMaterialLocalizations.delegate,
               GlobalWidgetsLocalizations.delegate,
               GlobalCupertinoLocalizations.delegate,

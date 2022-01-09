@@ -1,6 +1,6 @@
 name: extensions_package
 description: Collection of extensions used in app and package development
-version: 0.1.2+1
+version: 0.1.3+1
 homepage: http://www.raehealth.com
 publish_to: 'none'
 
@@ -9,20 +9,33 @@ environment:
   flutter: ">=2.8.1"
 
 dependencies:
+  cupertino_icons: ^1.0.4
   flutter:
     sdk: flutter
-  cupertino_icons: ^1.0.4
   flutter_bloc: ^8.0.1
   flutter_localizations:
     sdk: flutter
   flutter_modular: ^4.3.0
   intl: ^0.17.0
+  i69n: ^2.1.0
+  localize_enum_annotation:
+    git:
+      #url: git@github.com:RAE-Health/localize_enum.git
+      url: https://github.com/RAE-Health/localize_enum.git
+      path: packages/localize_enum_annotation
+  hive_flutter: ^1.1.0
 
 dependency_overrides: null
 
 dev_dependencies:
-  test: ^1.20.1
+  build_runner:
+  localize_enum:
+    git:
+      #url: git@github.com:RAE-Health/localize_enum.git
+      url: https://github.com/RAE-Health/localize_enum.git
+      path: packages/localize_enum
+  test:
 
 flutter:
   uses-material-design: true
-  generate: true
+  generate: false

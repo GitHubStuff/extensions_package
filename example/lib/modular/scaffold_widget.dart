@@ -1,7 +1,6 @@
 import 'package:extensions_package/extensions_package.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:theme_manager/theme_manager.dart';
 import 'package:xample/cubit/locale_cubit.dart';
 
 class ScaffoldWidget extends StatefulWidget {
@@ -30,7 +29,7 @@ class _ScaffoldWidget extends ObservingStatefulWidget<ScaffoldWidget> {
         appBar: AppBar(
           title: Text(widget.title),
           actions: [
-            ThemeControlWidget(),
+            //ThemeControlWidget(),
           ],
         ),
         body: _body(context),
@@ -62,7 +61,7 @@ class _ScaffoldWidget extends ObservingStatefulWidget<ScaffoldWidget> {
               .borderAll(Colors.green)
               .wrap(bottom: 8, top: 3, left: 3, right: 3),
           Wrap(
-            spacing: 8.0,
+            spacing: 4.0,
             children: [
               Container(height: 50, width: 50, child: sample).wrapAll(4.0).borderAll(Colors.red),
               Container(height: 50, width: 50, child: sample.rotate(percentage: 0.12)),
