@@ -1,7 +1,5 @@
 import 'package:extensions_package/extensions_package.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_modular/flutter_modular.dart';
-import 'package:xample/cubit/locale_cubit.dart';
 
 class ScaffoldWidget extends StatefulWidget {
   ScaffoldWidget({Key? key, required this.title}) : super(key: key);
@@ -47,7 +45,6 @@ class _ScaffoldWidget extends ObservingStatefulWidget<ScaffoldWidget> {
       );
 
   Widget _body(BuildContext context) {
-    LocaleCubit localeCubit = Modular.get<LocaleCubit>();
     return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -94,15 +91,6 @@ class _ScaffoldWidget extends ObservingStatefulWidget<ScaffoldWidget> {
               style: Theme.of(context).textTheme.headline4,
             ),
           ),
-          SizedBox(height: 24),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              ElevatedButton(onPressed: () => localeCubit.updateLocale(Locale('en', '')), child: Text('English')),
-              ElevatedButton(onPressed: () => localeCubit.updateLocale(Locale('es', '')), child: Text('Spanish')),
-              ElevatedButton(onPressed: () => localeCubit.updateLocale(Locale('de', '')), child: Text('German')),
-            ],
-          )
         ],
       ),
     );
