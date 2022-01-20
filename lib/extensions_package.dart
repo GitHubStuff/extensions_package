@@ -5,7 +5,7 @@ export 'src/build_context_extensions.dart';
 export 'src/date_time_extensions.dart';
 export 'src/duration_extensions.dart';
 export 'src/image_extensions.dart';
-export 'src/mixin/blur_overlay_mixin.dart';
+export 'src/mixin/dialog_mixin.dart';
 export 'src/simple_bloc_observer.dart';
 export 'src/text_extensions.dart';
 export 'src/theme_mode_extensions.dart';

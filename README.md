@@ -26,13 +26,6 @@ dependencies:
 import 'package:extensions_package/extensions_package.dart';
 ```
 
-### Language errors because Dart Analyzer crashed on VSCode
-
-If errors like ```Traget URI doesn't...``` or ```Undefined name 'AppLocalizations'``` Reload the Dart Analyzer
-
-1) Open the Command Palette (Ctrl+Shift+P)
-2) Enter and select ```Developer: Reload Window```
-
 ## Abtract classes, classes, and extensions
 
 - [abstract class ObservingStatefulWidget](readme/observing_stateful_widget.md) - helper methods like ```afterFirstLayout``` and callbacks for Widget state changes.
@@ -45,7 +38,8 @@ If errors like ```Traget URI doesn't...``` or ```Undefined name 'AppLocalization
 - [extension TextExtensions on Text](readme/text_extensions.md) - methods on Text Widgets for setting fontSize and textColor
 - [extension ThemeModeExtension on ThemeMode](readme/theme_mode_extensions.md) - returns brightness of a themeMode
 - [extension WidgetExtensions on Widget](readme/widget_extensions.md) - methods for layouting Widgets and setting properties
-
+- [mixin DialogMixin on Widget class](readme/dialog_mixin.md) - mixin on a widget class for enhance show dialog and background image as a backdrop.
+  
 ## Final Note
 
 Be kind to each other

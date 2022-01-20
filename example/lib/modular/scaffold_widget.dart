@@ -9,7 +9,7 @@ class ScaffoldWidget extends StatefulWidget {
   _ScaffoldWidget createState() => _ScaffoldWidget();
 }
 
-class _ScaffoldWidget extends ObservingStatefulWidget<ScaffoldWidget> with BlurOverlay {
+class _ScaffoldWidget extends ObservingStatefulWidget<ScaffoldWidget> with DialogMixin {
   String message = 'Tap for Size';
   String instruction = 'Tap + to change the text';
   String instruction2 = 'Tap again';
@@ -39,18 +39,17 @@ class _ScaffoldWidget extends ObservingStatefulWidget<ScaffoldWidget> with BlurO
               isFirst = !isFirst;
             });
             if (!isFirst) {
-              showWidgetDialog(
-                context,
-                widget: Container(
-                  child: Center(child: Text('👍')),
-                  height: 200,
-                  width: 250,
-                  color: Colors.green,
-                ),
-              );
-              Future.delayed(Duration(seconds: 5), () {
-                overlayDismiss(context);
-              });
+              showWidgetInDialog(context,
+                  child: Container(
+                    child: Center(child: Text('❤️').fontSize(32.0)),
+                    height: 200,
+                    width: 200,
+                    //color: Color(0x5faabbcc),
+                    //color: Colors.green,
+                  ),
+                  backgroundImage: AssetImage('assets/sample.png'),
+                  //childOpacity: 0.9,
+                  displayDuration: Duration(milliseconds: 2500));
             } else {}
           },
           tooltip: 'Increment',
