@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_modular/flutter_modular.dart';
 
 mixin DialogMixin {
   /// Make a background an image (instead of colors)
@@ -11,12 +12,12 @@ mixin DialogMixin {
       );
 
   /// Async dismis of `showWidgetInDialog`
-  void dismissShowWidgetInDialog(BuildContext context) => Future.delayed(
-      Duration.zero,
-      () => Navigator.of(
-            context,
-            rootNavigator: true,
-          ).pop());
+  void dismissShowWidgetInDialog(BuildContext context) => Future.delayed(Duration.zero, () => Modular.to.pop());
+
+  // () => Navigator.of(
+  //       context,
+  //       rootNavigator: true,
+  //     ).pop());
 
   ///Enhancement on ShowDialog:
   /// - Adjustable barrier color (doesn't allow tapping 'behind' the barrier)
