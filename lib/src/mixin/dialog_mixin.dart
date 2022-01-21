@@ -44,7 +44,7 @@ mixin DialogMixin {
           );
 
     Future.delayed(
-        Duration.zero,
+        Duration(milliseconds: 100),
         () => showDialog(
               context: context,
               barrierDismissible: false,
