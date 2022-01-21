@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
 import 'scaffold_widget.dart';
@@ -12,6 +13,6 @@ class AppModule extends Module {
   // Provide all the routes for your module
   @override
   final List<ModularRoute> routes = [
-    ChildRoute('/', child: (_, __) => ScaffoldWidget(title: 'extensions_package')),
+    ChildRoute('/', child: (_, __) => ScaffoldWidget(title: ['extensions_package', Image(image: AssetImage('assets/sample.png'))])),
   ];
 }

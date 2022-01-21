@@ -1,6 +1,6 @@
 name: extensions_package
 description: Collection of extensions used in app and package development
-version: 0.2.0+7
+version: 0.2.1+1
 homepage: http://www.raehealth.com
 publish_to: 'none'
 
@@ -15,7 +15,7 @@ dependencies:
   flutter_bloc: ^8.0.1
   flutter_localizations:
     sdk: flutter
-  flutter_modular: ^4.3.0
+  flutter_modular: ^4.4.0
 
 dependency_overrides: null
 

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 class ScaffoldWidget extends StatefulWidget {
   ScaffoldWidget({Key? key, required this.title}) : super(key: key);
-  final String title;
+  final dynamic title;
 
   @override
   _ScaffoldWidget createState() => _ScaffoldWidget();
@@ -25,7 +25,7 @@ class _ScaffoldWidget extends ObservingStatefulWidget<ScaffoldWidget> with Dialo
   @override
   Widget build(BuildContext context) => Scaffold(
         appBar: AppBar(
-          title: Text(widget.title),
+          title: UX.appBarWidgets(widget.title),
           actions: [
             //ThemeControlWidget(),
           ],
@@ -41,7 +41,7 @@ class _ScaffoldWidget extends ObservingStatefulWidget<ScaffoldWidget> with Dialo
             if (!isFirst) {
               showWidgetInDialog(context,
                   child: Container(
-                    child: Center(child: Text('❤️').fontSize(32.0)),
+                    child: Center(child: Text('❤️').fontSize(48.0)),
                     height: 200,
                     width: 200,
                     //color: Color(0x5faabbcc),
