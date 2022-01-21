@@ -11,7 +11,12 @@ mixin DialogMixin {
       );
 
   /// Async dismis of `showWidgetInDialog`
-  void dismissShowWidgetInDialog(BuildContext context) => Navigator.of(context, rootNavigator: true).pop();
+  void dismissShowWidgetInDialog(BuildContext context) => Future.delayed(
+      Duration.zero,
+      () => Navigator.of(
+            context,
+            rootNavigator: true,
+          ).pop());
 
   ///Enhancement on ShowDialog:
   /// - Adjustable barrier color (doesn't allow tapping 'behind' the barrier)
@@ -38,16 +43,18 @@ mixin DialogMixin {
             child: Opacity(opacity: childOpacity, child: child),
           );
 
-    showDialog(
-      context: context,
-      barrierDismissible: false,
-      builder: (_) => Material(
-        color: barrierColor,
-        child: Center(
-          child: childWidget,
-        ),
-      ),
-    );
+    Future.delayed(
+        Duration.zero,
+        () => showDialog(
+              context: context,
+              barrierDismissible: false,
+              builder: (_) => Material(
+                color: barrierColor,
+                child: Center(
+                  child: childWidget,
+                ),
+              ),
+            ));
     if (displayDuration != null) Future.delayed(displayDuration, () => dismissShowWidgetInDialog(context));
   }
 }
