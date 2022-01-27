@@ -14,11 +14,6 @@ mixin DialogMixin {
   /// Async dismis of `showWidgetInDialog`
   void dismissShowWidgetInDialog(BuildContext context) => Future.delayed(Duration.zero, () => Modular.to.pop());
 
-  // () => Navigator.of(
-  //       context,
-  //       rootNavigator: true,
-  //     ).pop());
-
   ///Enhancement on ShowDialog:
   /// - Adjustable barrier color (doesn't allow tapping 'behind' the barrier)
   /// - Optional background Image instead of colors option
@@ -58,28 +53,12 @@ mixin DialogMixin {
             ));
     if (displayDuration != null) Future.delayed(displayDuration, () => dismissShowWidgetInDialog(context));
   }
-}
 
-@Deprecated('use: DialogMixin in extensions_package')
-mixin BlurOverlay {
-  @Deprecated('use: DialogMix -> dismissShowWidgetInDialog() in extensions_package')
-  void overlayDismiss(BuildContext context) => Navigator.of(context, rootNavigator: true).pop();
-
-  @Deprecated('use: DialogMix -> showWidgetInDialog() in extensions_package')
-  void showWidgetDialog(
-    BuildContext context, {
-    required Widget widget,
-    Color barrierColor = const Color(0x20ffffff),
-  }) {
-    showDialog(
-      context: context,
-      barrierDismissible: false,
-      builder: (_) => Material(
-        color: barrierColor,
-        child: Center(
-          child: widget,
-        ),
-      ),
-    );
+  /// Execute a function after a given delay Duration(default 100ms), or a given number milliseconds (set "ms")
+  void afterDelay(Function function, {Duration duration = const Duration(milliseconds: 100), int? ms}) {
+    assert(ms == null || ms >= 0, 'Value of ms is either null or >0 not $ms');
+    assert(!duration.isNegative, 'Duration must >= 0');
+    Duration pause = (ms != null) ? Duration(milliseconds: ms) : duration;
+    Future.delayed(pause, () => function());
   }
 }
