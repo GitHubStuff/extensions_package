@@ -9,19 +9,19 @@ environment:
 
 dependencies:
   cupertino_icons: ^1.0.4
-  extensions_package:
-    path: ../
   flutter:
     sdk: flutter
   flutter_bloc: ^8.0.1
   flutter_localizations:
     sdk: flutter
   flutter_modular: ^4.3.0
-  mock_theme_management:
+  theme_management:
     git:
-      url: https://github.com/RAE-Health/mock_theme_management.git
+      url: https://github.com/RAE-Health/theme_management.git
 
-dependency_overrides: null
+dependency_overrides:
+  extensions_package:
+    path: ../
 
 dev_dependencies:
   build_runner:

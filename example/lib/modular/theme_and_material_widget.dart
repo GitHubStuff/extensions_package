@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:mock_theme_management/mock_theme_management.dart';
+import 'package:theme_management/theme_management.dart';
 
 class ThemeAndMaterialWidget extends StatelessWidget {
   @override
@@ -12,15 +12,15 @@ class ThemeAndMaterialWidget extends StatelessWidget {
 
   /// Widget wrapper to enclose switching dark/light mode themes of the MaterialApp
   Widget _materialAppBloc(Locale? locale) {
-    return BlocBuilder<MockThemeModeCubit, ThemeModeState>(
-        bloc: MockThemeModeCubit(),
+    return BlocBuilder<ThemeModeCubit, ThemeModeState>(
+        bloc: ThemeModeCubit(),
         builder: (_, state) {
           return MaterialApp(
             title: 'Flutter Demo',
             locale: locale,
-            theme: MockThemeManagement.lightTheme,
-            darkTheme: MockThemeManagement.darkTheme,
-            themeMode: MockThemeManagement.themeMode,
+            theme: ThemeManagement.lightTheme,
+            darkTheme: ThemeManagement.darkTheme,
+            themeMode: ThemeManagement.themeMode,
             initialRoute: '/',
             localizationsDelegates: [
               GlobalMaterialLocalizations.delegate,
