@@ -1,6 +1,6 @@
 name: extensions_package
 description: Collection of extensions used in app and package development
-version: 0.2.1+3
+version: 0.2.1+4
 homepage: http://www.raehealth.com
 publish_to: 'none'
 
