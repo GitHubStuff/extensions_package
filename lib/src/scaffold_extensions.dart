@@ -27,8 +27,4 @@ extension ScaffoldExtension on Scaffold {
         endDrawerEnableOpenDragGesture: this.endDrawerEnableOpenDragGesture,
         restorationId: this.restorationId,
       );
-
-  static Scaffold copy(Scaffold source, Color? scaffoldBackgroundColor) {
-    throw FlutterError('\n\n\nDeprecated for instance version\n\n\n');
-  }
 }
