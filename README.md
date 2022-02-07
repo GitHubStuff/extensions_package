@@ -34,6 +34,7 @@ import 'package:extensions_package/extensions_package.dart';
 - [extension DateTimeExtension on DateTime](readme/date_time_extensions.md) - enums, methods, and getters for [DateTime](https://api.flutter.dev/flutter/dart-core/DateTime-class.html)
 - [extension DurationExtension on Duration](readme/duration_extensions.md) - add/substract a ```Duration``` by a ```Duration```
 - [extension ImageExtension on Image](readme/image_extension.md) - rotations of an image
+- [extension ScaffoldExtension on Scaffold](readme/scaffold_extensions.md) - copy feature on ```Scaffold()```
 - [extension StringExtensions on String](readme/string_extensios.md) - collection of string tools
 - [extension TextExtensions on Text](readme/text_extensions.md) - methods on Text Widgets for setting fontSize and textColor
 - [extension ThemeModeExtension on ThemeMode](readme/theme_mode_extensions.md) - returns brightness of a themeMode

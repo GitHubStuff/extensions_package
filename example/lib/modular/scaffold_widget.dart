@@ -9,7 +9,7 @@ class ScaffoldWidget extends StatefulWidget {
   _ScaffoldWidget createState() => _ScaffoldWidget();
 }
 
-class _ScaffoldWidget extends ObservingStatefulWidget<ScaffoldWidget> with DialogMixin {
+class _ScaffoldWidget extends ObservingStatefulWidget<ScaffoldWidget>  {
   String message = 'Tap for Size';
   String instruction = 'Tap + to change the text';
   String instruction2 = 'Tap again';
@@ -38,19 +38,7 @@ class _ScaffoldWidget extends ObservingStatefulWidget<ScaffoldWidget> with Dialo
             setState(() {
               isFirst = !isFirst;
             });
-            if (!isFirst) {
-              showWidgetInDialog(context,
-                  child: Container(
-                    child: Center(child: Text('❤️').fontSize(48.0)),
-                    height: 200,
-                    width: 200,
-                    //color: Color(0x5faabbcc),
-                    //color: Colors.green,
-                  ),
-                  backgroundImage: AssetImage('assets/sample.png'),
-                  //childOpacity: 0.9,
-                  displayDuration: Duration(milliseconds: 2500));
-            } else {}
+
           },
           tooltip: 'Increment',
           child: Icon(Icons.ac_unit),
