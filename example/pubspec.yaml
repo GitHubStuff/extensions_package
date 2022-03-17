@@ -11,25 +11,23 @@ dependencies:
   cupertino_icons: ^1.0.4
   flutter:
     sdk: flutter
-  flutter_bloc: ^8.0.1
+  flutter_bloc: ^8.0.3
   flutter_localizations:
     sdk: flutter
   flutter_modular: ^4.4.1
-  language_package:
+  rae_widgets:
     git:
-      url: https://github.com/RAE-Health/language_package.git
+      url: https://github.com/RAE-Health/rae_widgets.git
   theme_management:
     git:
       url: https://github.com/RAE-Health/theme_management.git
-  widget_tree_package:
-    git:
-      url: https://github.com/RAE-Health/widget_tree_package.git
 
 dependency_overrides:
   extensions_package:
     path: ../
 
 dev_dependencies:
+  flutter_lints: ^1.0.4
   build_runner:
   flutter_test:
     sdk: flutter
