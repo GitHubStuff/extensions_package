@@ -17,13 +17,13 @@ dependencies:
   flutter_modular: ^4.4.1
   # rae_asset_package:
   #   git:
-  #     url: https://github.com/RAE-Health/rae_asset_package.git
+  #     url: git@github.com:RAE-Health/rae_asset_package.git
   # rae_widgets:
   #   git:
-  #     url: https://github.com/RAE-Health/rae_widgets.git
+  #     url: git@github.com:RAE-Health/rae_widgets.git
   # theme_management:
   #   git:
-  #     url: https://github.com/RAE-Health/theme_management.git
+  #     url: git@github.com:RAE-Health/theme_management.git
 
 dependency_overrides:
   extensions_package:
